@@ -30,7 +30,6 @@ class CfgFunctions
 			class playerFiredTracking {};
 			class playerStanceTracking {};
 			class playerWeaponTracking {};
-			class setCamouflage {};
 			class updateWeapon {};
 			class weaponSoundRange {};
 		};
