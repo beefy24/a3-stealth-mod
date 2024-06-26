@@ -1,0 +1,50 @@
+#include "define.hpp"
+
+#ifdef DEBUG_MODE_ON
+enableDebugConsole = 1;
+#endif
+
+disabledAI = 1;
+respawnOnStart = 0;
+
+class CfgFunctions
+{
+	class STMOD
+	{
+		class AI
+		{
+			class checkFootstepHeard {};
+			class checkTargetSpotted {};
+			class checkVisionField {};
+			class getTimeToLoseTarget {};
+			class groupKnowsAbout {};
+			class registerTarget {};
+			class startTargetLossTimer {};
+			class targetDetected {};
+			class unitHit {};
+		};
+	
+		class Player
+		{
+			class explosionSoundRange {};
+			class playerFiredTracking {};
+			class playerStanceTracking {};
+			class playerWeaponTracking {};
+			class setCamouflage {};
+			class updateWeapon {};
+			class weaponSoundRange {};
+		};
+
+		class Init
+		{
+			class initSettings {};
+			class postInit { postInit=1; };
+			class preInit { preInit=1; };
+			class setupEnemy {};
+			class setupPlayerClient {};
+			class setupPlayerServer {};
+			class setupTaggedUnits {};
+			class syncSettings {};
+		};
+	};
+};
