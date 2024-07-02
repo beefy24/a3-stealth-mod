@@ -1,8 +1,6 @@
 # Stealth for Arma 3
 This is an experimental stealth mod for Arma 3 that partially replaces the original detection system and allows customization of AI behavior. It is written as a scenario script that can be modified and integrated into a mission. Considering all the limitations of Arma 3, I have decided to stop developing this mod. However, some of you may still find it useful for creating small-scale singleplayer or co-op missions.
 
-Demo scenario: [Going Dark! [SP]](https://steamcommunity.com/sharedfiles/filedetails/?id=3035871887)
-
 ## Features
 * Custom spotting and hearing
 * Adjustable gun and explosion sound range
@@ -47,3 +45,5 @@ Configuration variables are located in `Functions\Init\initSettings.sqf` and in 
 3. In the current A3 Development Build, the [ignoreTarget](https://community.bistudio.com/wiki/ignoreTarget) command causes freezing when used on a player in a vehicle. This issue has been temporarily resolved by repeatedly calling the [forgetTarget](https://community.bistudio.com/wiki/forgetTarget) command. While not ideal,  it produces a similar effect.
 
 4. Grenade explosions are sometimes not registered by the event handler on the server.
+
+5. Silenced weapons don't trigger firedMan event on a listen server if the unit is far from the hosting player.
