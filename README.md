@@ -1,5 +1,5 @@
 ## Stealth for Arma 3
-This is an experimental stealth mod for Arma 3 that partially replaces the original detection system and allows customization of AI behavior. It is written as a scenario script that can be modified and integrated into a mission. Due to the limitations of Arma 3, I have decided to stop developing this mod.
+This is an experimental stealth mod for Arma 3 that attempts to replace the original detection system and allow customization of AI behavior. It is written as a scenario script that can be modified and integrated into a mission. Due to the limitations of Arma 3, which lead to the improper design of stealth mechanics, I have decided to stop developing this mod.
 
 ## Features
 * Custom spotting and hearing
@@ -9,7 +9,7 @@ This is an experimental stealth mod for Arma 3 that partially replaces the origi
 * Multiplayer compatibility [*](#issues)
 
 ## Installation
-Arma 3 version 2.18 or later is required (currently available in the [Development Build](https://dev.arma3.com/dev-branch)).
+Arma 3 version 2.18 or later is required.
 
 To install the mod, download this repository, and move the files into a mission directory:
 
@@ -42,7 +42,7 @@ Configuration variables are located in `Functions\Init\initSettings.sqf` and in 
 
 (The cause of issues 1 and 2 is that the mod currently cannot handle locality changes of stealth units.)
 
-3. In the current A3 Development Build, the [ignoreTarget](https://community.bistudio.com/wiki/ignoreTarget) command causes freezing when used on a player in a vehicle. This issue has been temporarily resolved by repeatedly calling the [forgetTarget](https://community.bistudio.com/wiki/forgetTarget) command. While not ideal,  it produces a similar effect.
+3. (May not apply anymore.) The [ignoreTarget](https://community.bistudio.com/wiki/ignoreTarget) command causes freezing when used on a player in a vehicle. This issue has been temporarily resolved by repeatedly calling the [forgetTarget](https://community.bistudio.com/wiki/forgetTarget) command. While not ideal, it produces a similar effect.
 
 4. Grenade explosions are sometimes not registered by the event handler on the server.
 
